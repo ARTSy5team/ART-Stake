@@ -1,8 +1,8 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/arts9947/public_html # Tambahkan /<app_folder> jika diperlukan
-    - /bin/cp index.html $DEPLOYPATH # Salin index.html ke tujuan
-    - /bin/cp css/style.css $DEPLOYPATH # Salin style.css ke tujuan
-    - /bin/cp js/script.js $DEPLOYPATH # Salin script.js ke tujuan
-    - /bin/cp -R img/node/testnet $DEPLOYPATH # Salin direktori testnet secara rekursif ke tujuan
+    - export DEPLOYPATH=/home/arts9947/public_html
+    - /bin/cp index.html $DEPLOYPATH
+    - /bin/cp css/style.css $DEPLOYPATH
+    - /bin/cp js/script.js $DEPLOYPATH
+    - /bin/cp -R img/node/testnet $DEPLOYPATH
