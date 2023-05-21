@@ -1,10 +1,8 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/<username>/public_html # Tambahkan /<app_folder> jika diperlukan
-    - /bin/cp index.html $DEPLOYPATH # Salin file tertentu ke tujuan dari root
-    - /bin/cp /css/style.css $DEPLOYPATH # Salin file tertentu dari subfolder sumber
-    - /bin/cp /js/script.js $DEPLOYPATH
-    - /bin/cp * $DEPLOYPATH # Salin semua file dari root
-    - /bin/cp /web-demo-v4/* $DEPLOYPATH # Salin semua file dari subfolder root
-    - /bin/cp -r * $DEPLOYPATH # Salin semua file secara rekursif ke $DEPLOYPATH
+    - export DEPLOYPATH=/home/arts9947public_html # Tambahkan /<app_folder> jika diperlukan
+    - /bin/cp index.html $DEPLOYPATH # Salin index.html ke tujuan
+    - /bin/cp css/style.css $DEPLOYPATH # Salin style.css ke tujuan
+    - /bin/cp js/script.js $DEPLOYPATH # Salin script.js ke tujuan
+    - /bin/cp -R img/node/testnet $DEPLOYPATH # Salin direktori testnet secara rekursif ke tujuan
