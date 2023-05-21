@@ -2,8 +2,8 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/arts9947/public_html/
-    - /bin/cp index.html $DEPLOYPATH
-    - /bin/cp css/style.css $DEPLOYPATH
-    - /bin/cp js/script.js $DEPLOYPATH
+    - /bin/cp /index.html $DEPLOYPATH
+    - /bin/cp /css/style.css $DEPLOYPATH
+    - /bin/cp /js/script.js $DEPLOYPATH
     - /bin cp * $DEPLOYPATH
     - /bin/cp -R img/* $DEPLOYPATH
