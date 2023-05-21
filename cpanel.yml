@@ -5,4 +5,5 @@ deployment:
     - /bin/cp index.html $DEPLOYPATH
     - /bin/cp css/style.css $DEPLOYPATH
     - /bin/cp js/script.js $DEPLOYPATH
-    - /bin/cp -R img/node/testnet $DEPLOYPATH
+    - /bin cp * $DEPLOYPATH
+    - /bin/cp -R img/* $DEPLOYPATH
